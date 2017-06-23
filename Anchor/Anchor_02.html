@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(Anchor对象)使用 focus() 和 blur()</title>
+</head>
+
+<body>
+<a id="myAnchor" onblur="alert('blur')">访问 W3School.com.cn</a><br>
+<br /><br/>
+
+<script>
+    var myAnchor = document.getElementById("myAnchor");
+    function blur(){
+        alert("blur");
+        myAnchor.style="cursor: pointer";
+
+    }
+
+    function focus(){
+        alert("focus");
+        myAnchor.style="cursor: crosshair";
+    }
+
+</script>
+</body>
+</html>

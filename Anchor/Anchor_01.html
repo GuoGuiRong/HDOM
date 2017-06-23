@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anchor对象（更改一个链接的文本、URL 以及 target）</title>
+</head>
+<body>
+<a id="myAnchor" href="http://www.microsoft.com">访问 Microsoft</a>
+<input type="button" value="改变链接">
+<p>
+    在本例中，我们改变超链接的文本和 URL。我们也改变 target 属性。
+    target 属性的默认设置是 "_self"，这意味着会在相同的窗口中打开链接。
+    通过把 target 属性设置为 "_blank"，链接将在新窗口中打开。
+</p>
+
+<script type="text/javascript">
+
+    document.getElementsByTagName('input')[0].onclick = changeLink;
+    function changeLink()
+    {
+        var myAnchor = document.getElementById('myAnchor');
+        myAnchor.innerHTML="访问 W3School";
+        myAnchor.href="http://www.w3school.com.cn";
+        myAnchor.target="_blank";
+    }
+</script>
+</body>
+</html>
